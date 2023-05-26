@@ -1,17 +1,20 @@
 pipeline {
     agent any 
 
+    tools { 
+        // Utiliza la instalación de Maven que has configurado en Jenkins
+        maven 'jenkinsmaven' 
+    }
+
     stages {
         stage('Checkout') {
             steps {
-                // Requerimiento 1: Obtiene el código de su proyecto desde GitHub.
                 git 'https://github.com/MiguelAngelRamos/simple-java-maven-app.git'
             }
         }
 
         stage('Build') {
             steps {
-                // Requerimiento 2: Genera los artefactos.
                 script {
                     sh 'mvn clean package'
                 }
@@ -20,14 +23,12 @@ pipeline {
 
         stage('Archive Artifacts') {
             steps {
-                // Requerimiento 3: Archiva los artefactos.
                 archiveArtifacts artifacts: 'target/*.jar', fingerprint: true
             }
         }
 
         stage('Test') {
             steps {
-                // Requerimiento 4: Ejecuta los tests de Maven.
                 script {
                     sh 'mvn test'
                 }
