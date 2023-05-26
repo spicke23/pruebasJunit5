@@ -13,7 +13,7 @@ pipeline {
             steps {
                 // Requerimiento 2: Genera los artefactos.
                 script {
-                    sh 'clean package'
+                    sh 'mvn clean package'
                 }
             }
         }
@@ -29,7 +29,7 @@ pipeline {
             steps {
                 // Requerimiento 4: Ejecuta los tests de Maven.
                 script {
-                    sh 'test'
+                    sh 'mvn test'
                 }
             }
         }
