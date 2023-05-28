@@ -46,9 +46,10 @@ pipeline {
         }
     }
 
-    stage('nexus') {
+    //
+    stage('Nexus Upload') {
         steps {
-           nexusArtifactUploader(
+            nexusArtifactUploader(
                 nexusVersion: 'nexus3',
                 protocol: 'http',
                 nexusUrl: 'localhost:8081',
@@ -56,15 +57,20 @@ pipeline {
                 version: '0.0.1-SNAPSHOT',
                 repository: 'app-init',
                 credentialsId: 'nex',
-                    artifacts: [
-                        [artifactId: 'proyectoJunit',
-                            classifier: '',
-                            file: '/var/jenkins_home/workspace/NewJUnit5/target/proyectoJunit-0.0.1-SNAPSHOT.jar',
-                            type: 'jar']
+                artifacts: [
+                    [artifactId: 'proyectoJunit',
+                    classifier: '',
+                    file: 'target/myproject-1.0.0.jar',
+                    type: 'jar'],
+                    [artifactId: 'myproject',
+                    classifier: '',
+                    file: 'pom.xml',
+                    type: 'pom']
                 ]
             )
-                              
         }
     }
+
+    //
     }
 }
