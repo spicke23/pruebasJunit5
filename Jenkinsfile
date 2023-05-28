@@ -58,7 +58,7 @@ pipeline {
                                     groupId: pom.groupId,
                                     version: pom.version,
                                     repository: 'maven-snapshots',
-                                    credentialsId: 'nexuscredenciales',
+                                    // credentialsId: 'nexuscredenciales',
                                     artifacts: [
                                         [artifactId: pom.artifactId,
                                         classifier: '',
