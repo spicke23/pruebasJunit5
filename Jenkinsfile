@@ -57,7 +57,7 @@ pipeline {
                 repository: 'maven-snapshots',
                 credentialsId: 'NexusLogin',
                     artifacts: [
-                        [artifactId: proyectoJunit,
+                        [artifactId: 'proyectoJunit',
                             classifier: '',
                             file: '/var/jenkins_home/workspace/NewJUnit5/target/proyectoJunit-0.0.1-SNAPSHOT.jar',
                             type: 'jar']
