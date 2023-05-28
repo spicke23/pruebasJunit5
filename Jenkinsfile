@@ -57,7 +57,7 @@ pipeline {
                                     nexusUrl: 'localhost:8081',
                                     groupId: pom.groupId,
                                     version: pom.version,
-                                    repository: 'app-init',
+                                    repository: 'app-init/',
                                     credentialsId: 'nexuscredenciales',
                                     artifacts: [
                                         [artifactId: pom.artifactId,
