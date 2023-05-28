@@ -62,8 +62,8 @@ pipeline {
                                     artifacts: [
                                         [artifactId: pom.artifactId,
                                         classifier: '',
-                                        file: 'proyectoJunit-0.0.1-SNAPSHOT.jar',
-                                        type: pom.packaging]
+                                        file: '/var/jenkins_home/workspace/NewJUnit5/target/proyectoJunit-0.0.1-SNAPSHOT.jar',
+                                        type: 'jar']
                                     ]
                                 )
                             }
