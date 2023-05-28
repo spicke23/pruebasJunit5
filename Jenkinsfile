@@ -48,26 +48,22 @@ pipeline {
 
     stage('nexus') {
         steps {
-            script {
-                  dir("target"){
-                    def pom = readMavenPom file: "../pom.xml"
-                                nexusArtifactUploader(
-                                    nexusVersion: 'nexus3',
-                                    protocol: 'http',
-                                    nexusUrl: 'localhost:8081',
-                                    groupId: pom.groupId,
-                                    version: pom.version,
-                                    repository: 'maven-snapshots',
-                                    // credentialsId: 'nexuscredenciales',
-                                    artifacts: [
-                                        [artifactId: pom.artifactId,
-                                        classifier: '',
-                                        file: '/var/jenkins_home/workspace/NewJUnit5/target/proyectoJunit-0.0.1-SNAPSHOT.jar',
-                                        type: 'jar']
-                                    ]
-                                )
-                            }
-            }
+           nexusArtifactUploader(
+                nexusVersion: 'nexus3',
+                protocol: 'http',
+                nexusUrl: 'localhost:8081',
+                groupId: cl.awakelab.junitapp,
+                version: 0.0.1-SNAPSHOT,
+                repository: 'maven-snapshots',
+                credentialsId: 'NexusLogin',
+                    artifacts: [
+                        [artifactId: proyectoJunit,
+                            classifier: '',
+                            file: '/var/jenkins_home/workspace/NewJUnit5/target/proyectoJunit-0.0.1-SNAPSHOT.jar',
+                            type: 'jar']
+                ]
+            )
+                              
         }
     }
 
