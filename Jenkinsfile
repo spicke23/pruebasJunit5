@@ -62,7 +62,7 @@ pipeline {
                     classifier: '',
                     file: 'target/proyectoJunit-0.0.1-SNAPSHOT.jar',
                     type: 'jar'],
-                    [artifactId: 'myproject',
+                    [artifactId: 'proyectoJunit',
                     classifier: '',
                     file: 'pom.xml',
                     type: 'pom']
