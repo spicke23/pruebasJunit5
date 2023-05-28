@@ -51,10 +51,10 @@ pipeline {
            nexusArtifactUploader(
                 nexusVersion: 'nexus3',
                 protocol: 'http',
-                nexusUrl: 'localhost:8081',
+                nexusUrl: 'http://localhost:8081',
                 groupId: 'cl.awakelab.junitapp',
                 version: '0.0.1-SNAPSHOT',
-                repository: 'maven-snapshots',
+                repository: 'app-init',
                 credentialsId: 'nex',
                     artifacts: [
                         [artifactId: 'proyectoJunit',
@@ -66,6 +66,5 @@ pipeline {
                               
         }
     }
-
     }
 }
