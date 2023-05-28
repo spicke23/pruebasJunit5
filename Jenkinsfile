@@ -2,7 +2,6 @@ pipeline {
     agent any 
 
     tools { 
-        // Utiliza la instalación de Maven que has configurado en Jenkins
         maven 'jenkinsmaven' 
     }
 
@@ -31,6 +30,16 @@ pipeline {
             steps {
                 script {
                     sh 'mvn test'
+                }
+            }
+        }
+
+        stage('SonarQube analysis') {
+            steps {
+                withCredentials([string(credentialsId: 'sonar', variable: 'sonarLogin')]) {
+                    script {
+                        sh 'mvn sonar:sonar -Dsonar.projectKey=my_project -Dsonar.host.url=http://localhost:9000 -Dsonar.login=${sonarLogin}'
+                    }
                 }
             }
         }
