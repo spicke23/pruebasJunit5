@@ -60,7 +60,7 @@ pipeline {
                 artifacts: [
                     [artifactId: 'proyectoJunit',
                     classifier: '',
-                    file: 'target/myproject-1.0.0.jar',
+                    file: 'target/proyectoJunit-0.0.1-SNAPSHOT.jar',
                     type: 'jar'],
                     [artifactId: 'myproject',
                     classifier: '',
