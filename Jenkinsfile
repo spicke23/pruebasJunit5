@@ -46,5 +46,30 @@ pipeline {
         }
     }
 
+    stage('nexus') {
+        steps {
+            script {
+                  dir("target"){
+                    def pom = readMavenPom file: "pom.xml"
+                                nexusArtifactUploader(
+                                    nexusVersion: 'nexus3',
+                                    protocol: 'http',
+                                    nexusUrl: 'localhost:8081',
+                                    groupId: pom.groupId,
+                                    version: pom.version,
+                                    repository: 'app-init',
+                                    credentialsId: 'nexuscredenciales',
+                                    artifacts: [
+                                        [artifactId: pom.artifactId,
+                                        classifier: '',
+                                        file: 'proyectoJunit-0.0.1-SNAPSHOT.jar',
+                                        type: pom.packaging]
+                                    ]
+                                )
+                            }
+            }
+        }
+    }
+
     }
 }
