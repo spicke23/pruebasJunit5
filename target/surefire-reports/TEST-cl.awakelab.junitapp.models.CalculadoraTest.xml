@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="cl.awakelab.junitapp.models.CalculadoraTest" time="0.061" tests="5" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="cl.awakelab.junitapp.models.CalculadoraTest" time="0.042" tests="5" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="17"/>
     <property name="sun.cpu.isalist" value="amd64"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="java.class.path" value="C:\Users\MIGUEL\Desktop\pruebasJunit5\target\test-classes;C:\Users\MIGUEL\Desktop\pruebasJunit5\target\classes;C:\Users\MIGUEL\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.9.3\junit-jupiter-api-5.9.3.jar;C:\Users\MIGUEL\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\MIGUEL\.m2\repository\org\junit\platform\junit-platform-commons\1.9.3\junit-platform-commons-1.9.3.jar;C:\Users\MIGUEL\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\MIGUEL\.m2\repository\org\sonarsource\scanner\maven\sonar-maven-plugin\3.9.1.2184\sonar-maven-plugin-3.9.1.2184.jar;C:\Users\MIGUEL\.m2\repository\org\sonatype\plexus\plexus-sec-dispatcher\1.4\plexus-sec-dispatcher-1.4.jar;C:\Users\MIGUEL\.m2\repository\org\sonatype\plexus\plexus-cipher\1.4\plexus-cipher-1.4.jar;C:\Users\MIGUEL\.m2\repository\org\codehaus\plexus\plexus-utils\3.2.1\plexus-utils-3.2.1.jar;C:\Users\MIGUEL\.m2\repository\org\sonarsource\scanner\api\sonar-scanner-api\2.16.2.588\sonar-scanner-api-2.16.2.588.jar;C:\Users\MIGUEL\.m2\repository\commons-lang\commons-lang\2.6\commons-lang-2.6.jar;"/>
+    <property name="java.class.path" value="C:\Users\MIGUEL\Desktop\pruebasJunit5\target\test-classes;C:\Users\MIGUEL\Desktop\pruebasJunit5\target\classes;C:\Users\MIGUEL\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.9.3\junit-jupiter-api-5.9.3.jar;C:\Users\MIGUEL\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\MIGUEL\.m2\repository\org\junit\platform\junit-platform-commons\1.9.3\junit-platform-commons-1.9.3.jar;C:\Users\MIGUEL\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;"/>
     <property name="java.vm.vendor" value="Eclipse Adoptium"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="user.variant" value=""/>
@@ -15,9 +15,9 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="CL"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Eclipse Adoptium\jdk-17.0.4.101-hotspot\bin"/>
-    <property name="sun.java.command" value="C:\Users\MIGUEL\AppData\Local\Temp\surefire14131300926876966559\surefirebooter-20230527232344739_3.jar C:\Users\MIGUEL\AppData\Local\Temp\surefire14131300926876966559 2023-05-27T23-23-44_595-jvmRun1 surefire-20230527232344739_1tmp surefire_0-20230527232344739_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\MIGUEL\AppData\Local\Temp\surefire11928280649431225834\surefirebooter-20230528000946459_3.jar C:\Users\MIGUEL\AppData\Local\Temp\surefire11928280649431225834 2023-05-28T00-09-46_348-jvmRun1 surefire-20230528000946459_1tmp surefire_0-20230528000946459_2tmp"/>
     <property name="jdk.debug" value="release"/>
-    <property name="surefire.test.class.path" value="C:\Users\MIGUEL\Desktop\pruebasJunit5\target\test-classes;C:\Users\MIGUEL\Desktop\pruebasJunit5\target\classes;C:\Users\MIGUEL\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.9.3\junit-jupiter-api-5.9.3.jar;C:\Users\MIGUEL\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\MIGUEL\.m2\repository\org\junit\platform\junit-platform-commons\1.9.3\junit-platform-commons-1.9.3.jar;C:\Users\MIGUEL\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\MIGUEL\.m2\repository\org\sonarsource\scanner\maven\sonar-maven-plugin\3.9.1.2184\sonar-maven-plugin-3.9.1.2184.jar;C:\Users\MIGUEL\.m2\repository\org\sonatype\plexus\plexus-sec-dispatcher\1.4\plexus-sec-dispatcher-1.4.jar;C:\Users\MIGUEL\.m2\repository\org\sonatype\plexus\plexus-cipher\1.4\plexus-cipher-1.4.jar;C:\Users\MIGUEL\.m2\repository\org\codehaus\plexus\plexus-utils\3.2.1\plexus-utils-3.2.1.jar;C:\Users\MIGUEL\.m2\repository\org\sonarsource\scanner\api\sonar-scanner-api\2.16.2.588\sonar-scanner-api-2.16.2.588.jar;C:\Users\MIGUEL\.m2\repository\commons-lang\commons-lang\2.6\commons-lang-2.6.jar;"/>
+    <property name="surefire.test.class.path" value="C:\Users\MIGUEL\Desktop\pruebasJunit5\target\test-classes;C:\Users\MIGUEL\Desktop\pruebasJunit5\target\classes;C:\Users\MIGUEL\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.9.3\junit-jupiter-api-5.9.3.jar;C:\Users\MIGUEL\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\MIGUEL\.m2\repository\org\junit\platform\junit-platform-commons\1.9.3\junit-platform-commons-1.9.3.jar;C:\Users\MIGUEL\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="C:\Users\MIGUEL"/>
     <property name="user.language" value="es"/>
@@ -30,7 +30,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\MIGUEL\AppData\Local\Temp\surefire14131300926876966559\surefirebooter-20230527232344739_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\MIGUEL\AppData\Local\Temp\surefire11928280649431225834\surefirebooter-20230528000946459_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="17.0.4.1+1"/>
@@ -57,30 +57,30 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="61.0"/>
   </properties>
-  <testcase name="testDivideByZero" classname="cl.awakelab.junitapp.models.CalculadoraTest" time="0.025">
-    <system-out><![CDATA[ConfiguraciÃ³n inicial para todas las pruebas
-ConfiguraciÃ³n especÃ­fica antes de cada prueba
-Realizar tareas de limpieza despuÃ©s de cada prueba
+  <testcase name="testDivideByZero" classname="cl.awakelab.junitapp.models.CalculadoraTest" time="0.018">
+    <system-out><![CDATA[Configuración inicial para todas las pruebas
+Configuración específica antes de cada prueba
+Realizar tareas de limpieza después de cada prueba
 ]]></system-out>
   </testcase>
   <testcase name="testAdd" classname="cl.awakelab.junitapp.models.CalculadoraTest" time="0.002">
-    <system-out><![CDATA[ConfiguraciÃ³n especÃ­fica antes de cada prueba
-Realizar tareas de limpieza despuÃ©s de cada prueba
+    <system-out><![CDATA[Configuración específica antes de cada prueba
+Realizar tareas de limpieza después de cada prueba
 ]]></system-out>
   </testcase>
   <testcase name="testSubtract" classname="cl.awakelab.junitapp.models.CalculadoraTest" time="0.001">
-    <system-out><![CDATA[ConfiguraciÃ³n especÃ­fica antes de cada prueba
-Realizar tareas de limpieza despuÃ©s de cada prueba
+    <system-out><![CDATA[Configuración específica antes de cada prueba
+Realizar tareas de limpieza después de cada prueba
 ]]></system-out>
   </testcase>
   <testcase name="testDivide" classname="cl.awakelab.junitapp.models.CalculadoraTest" time="0.001">
-    <system-out><![CDATA[ConfiguraciÃ³n especÃ­fica antes de cada prueba
-Realizar tareas de limpieza despuÃ©s de cada prueba
+    <system-out><![CDATA[Configuración específica antes de cada prueba
+Realizar tareas de limpieza después de cada prueba
 ]]></system-out>
   </testcase>
-  <testcase name="testMultiply" classname="cl.awakelab.junitapp.models.CalculadoraTest" time="0">
-    <system-out><![CDATA[ConfiguraciÃ³n especÃ­fica antes de cada prueba
-Realizar tareas de limpieza despuÃ©s de cada prueba
+  <testcase name="testMultiply" classname="cl.awakelab.junitapp.models.CalculadoraTest" time="0.001">
+    <system-out><![CDATA[Configuración específica antes de cada prueba
+Realizar tareas de limpieza después de cada prueba
 ]]></system-out>
   </testcase>
 </testsuite>
