@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="CL"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Eclipse Adoptium\jdk-17.0.4.101-hotspot\bin"/>
-    <property name="sun.java.command" value="C:\Users\MIGUEL\AppData\Local\Temp\surefire11928280649431225834\surefirebooter-20230528000946459_3.jar C:\Users\MIGUEL\AppData\Local\Temp\surefire11928280649431225834 2023-05-28T00-09-46_348-jvmRun1 surefire-20230528000946459_1tmp surefire_0-20230528000946459_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\MIGUEL\AppData\Local\Temp\surefire9889890944384234390\surefirebooter-20230528011507453_3.jar C:\Users\MIGUEL\AppData\Local\Temp\surefire9889890944384234390 2023-05-28T01-15-07_331-jvmRun1 surefire-20230528011507453_1tmp surefire_0-20230528011507453_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\Users\MIGUEL\Desktop\pruebasJunit5\target\test-classes;C:\Users\MIGUEL\Desktop\pruebasJunit5\target\classes;C:\Users\MIGUEL\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.9.3\junit-jupiter-api-5.9.3.jar;C:\Users\MIGUEL\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\MIGUEL\.m2\repository\org\junit\platform\junit-platform-commons\1.9.3\junit-platform-commons-1.9.3.jar;C:\Users\MIGUEL\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -30,7 +30,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\MIGUEL\AppData\Local\Temp\surefire11928280649431225834\surefirebooter-20230528000946459_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\MIGUEL\AppData\Local\Temp\surefire9889890944384234390\surefirebooter-20230528011507453_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="17.0.4.1+1"/>
