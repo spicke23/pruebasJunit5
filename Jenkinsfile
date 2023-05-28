@@ -59,6 +59,7 @@ pipeline {
                                     version: pom.version,
                                     repository: 'maven-snapshots',
                                     credentialsId: 'nexuscredenciales',
+                                    artifacts: [
                                         [artifactId: pom.artifactId,
                                         classifier: '',
                                         file: '/var/jenkins_home/workspace/NewJUnit5/target/proyectoJunit-0.0.1-SNAPSHOT.jar',
