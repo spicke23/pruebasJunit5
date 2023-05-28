@@ -50,7 +50,7 @@ pipeline {
         steps {
             script {
                   dir("target"){
-                    def pom = readMavenPom file: "NewJUnit5/pom.xml"
+                    def pom = readMavenPom file: "../pom.xml"
                                 nexusArtifactUploader(
                                     nexusVersion: 'nexus3',
                                     protocol: 'http',
