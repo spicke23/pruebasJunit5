@@ -52,7 +52,7 @@ pipeline {
             nexusArtifactUploader(
                 nexusVersion: 'nexus3',
                 protocol: 'https',
-                nexusUrl: 'b119-190-44-22-6.ngrok-free.app',
+                nexusUrl: 'nexus:8081',
                 groupId: 'cl.awakelab.junitapp',
                 version: '0.0.1-SNAPSHOT',
                 repository: 'app-init',
