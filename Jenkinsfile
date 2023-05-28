@@ -34,12 +34,11 @@ pipeline {
             }
         }
 
-        stage('SonarQube analysis') {
+        stage('Sonar Scanner') {
             steps {
+                def sonarqubeScannerHome = tool name: 'sonar', type: 'hudson.plugins.sonar.SonarRunnerInstallation'
                 withCredentials([string(credentialsId: 'sonar', variable: 'sonarLogin')]) {
-                    script {
-                        sh 'mvn sonar:sonar -Dsonar.projectKey=my_project -Dsonar.host.url=http://localhost:9000 -Dsonar.login=${sonarLogin}'
-                    }
+                    sh "${sonarqubeScannerHome}/bin/sonar-scanner -e -Dsonar.host.url=http://sonarqube:9000 -Dsonar.login=${sonarLogin} -Dsonar.projectName=maven-pruebasJunit5 -Dsonar.projectVersion=${env.BUILD_NUMBER} -Dsonar.projectKey=GS -Dsonar.sources=complete/src/main/ -Dsonar.tests=complete/src/test/ -Dsonar.language=java -Dsonar.java.binaries=."
                 }
             }
         }
