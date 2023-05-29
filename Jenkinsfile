@@ -56,7 +56,7 @@ pipeline {
                 groupId: 'cl.awakelab.junitapp',
                 version: '0.0.1-SNAPSHOT',
                 repository: 'app-init',
-                credentialsId: 'nexusjenkins',
+                credentialsId: 'ubuntu-nexus-server',
                 artifacts: [
                     [artifactId: 'proyectoJunit',
                     classifier: '',
