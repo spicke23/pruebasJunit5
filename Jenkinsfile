@@ -47,29 +47,29 @@ pipeline {
     }
 
     //
-    stage('Nexus Upload') {
-        steps {
-            nexusArtifactUploader(
-                nexusVersion: 'nexus3',
-                protocol: 'http',
-                nexusUrl: 'nexus:8081',
-                groupId: 'cl.awakelab.junitapp',
-                version: '0.0.1-SNAPSHOT',
-                repository: 'app-init',
-                credentialsId: 'nex',
-                artifacts: [
-                    [artifactId: 'proyectoJunit',
-                    classifier: '',
-                    file: 'target/proyectoJunit-0.0.1-SNAPSHOT.jar',
-                    type: 'jar'],
-                    [artifactId: 'proyectoJunit',
-                    classifier: '',
-                    file: 'pom.xml',
-                    type: 'pom']
-                ]
-            )
-        }
-    }
+    // stage('Nexus Upload') {
+    //     steps {
+    //         nexusArtifactUploader(
+    //             nexusVersion: 'nexus3',
+    //             protocol: 'http',
+    //             nexusUrl: 'nexus:8081',
+    //             groupId: 'cl.awakelab.junitapp',
+    //             version: '0.0.1-SNAPSHOT',
+    //             repository: 'app-init',
+    //             credentialsId: 'nex',
+    //             artifacts: [
+    //                 [artifactId: 'proyectoJunit',
+    //                 classifier: '',
+    //                 file: 'target/proyectoJunit-0.0.1-SNAPSHOT.jar',
+    //                 type: 'jar'],
+    //                 [artifactId: 'proyectoJunit',
+    //                 classifier: '',
+    //                 file: 'pom.xml',
+    //                 type: 'pom']
+    //             ]
+    //         )
+    //     }
+    // }
 
     //
     }
