@@ -40,36 +40,14 @@ pipeline {
             script {
                 def sonarqubeScannerHome = tool name: 'sonar', type: 'hudson.plugins.sonar.SonarRunnerInstallation'
                 withCredentials([string(credentialsId: 'sonar', variable: 'sonarLogin')]) {
-                    sh "${sonarqubeScannerHome}/bin/sonar-scanner -e -Dsonar.host.url=http://SonarQube:9000 -Dsonar.login=${sonarLogin} -Dsonar.projectName=gs-gradle -Dsonar.projectVersion=${env.BUILD_NUMBER} -Dsonar.projectKey=GS -Dsonar.sources=src/main/java/cl/awakelab/junitapp -Dsonar.tests=src/test/java/cl/awakelab/junitapp -Dsonar.language=java -Dsonar.java.binaries=."
+                    sh "${sonarqubeScannerHome}/bin/sonar-scanner -e -Dsonar.host.url=http://SonarQube:9000 -Dsonar.login=${sonarLogin} -Dsonar.projectName=gs-gradle -Dsonar.projectVersion=${env.BUILD_NUMBER} -Dsonar.projectKey=GS -Dsonar.sources="dondeirtupackage" nq -Dsonar.tests=""dondeirtupackage" p -Dsonar.language=java -Dsonar.java.binaries=."
                 }
             }
         }
     }
 
     //
-    stage('Nexus Upload') {
-        steps {
-            nexusArtifactUploader(
-                nexusVersion: 'nexus3',
-                protocol: 'http',
-                nexusUrl: 'nexus:8081',
-                groupId: 'cl.awakelab.junitapp',
-                version: '0.0.1-SNAPSHOT',
-                repository: 'maven-snapshots',
-                credentialsId: 'nex',
-                artifacts: [
-                    [artifactId: 'proyectoJunit',
-                    classifier: '',
-                    file: 'target/proyectoJunit-0.0.1.jar',
-                    type: 'jar'],
-                    [artifactId: 'proyectoJunit',
-                    classifier: '',
-                    file: 'pom.xml',
-                    type: 'pom']
-                ]
-            )
-        }
-    }
+
 
     //
     }
