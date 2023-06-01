@@ -55,7 +55,7 @@ pipeline {
                 nexusUrl: 'nexus:8081',
                 groupId: 'cl.awakelab.junitapp',
                 version: '0.0.1-SNAPSHOT',
-                repository: 'app-init',
+                repository: 'maven-snapshots',
                 credentialsId: 'nex',
                 artifacts: [
                     [artifactId: 'proyectoJunit',
