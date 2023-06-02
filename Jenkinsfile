@@ -2,14 +2,14 @@ pipeline {
     agent any 
 
     tools { 
-        maven 'mavenjenkins'
-        jdk 'jenkisjava'
+        maven 'jenkinsmaven'
+        jdk 'javajenkins'
     }
 
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'main', url: 'https://github.com/MiguelAngelRamos/pruebasJunit5.git'
+                git branch: 'main', url: 'https://github.com/spicke23/pruebasJunit5.git'
             }
         }
 
@@ -56,7 +56,7 @@ pipeline {
                 groupId: 'cl.awakelab.junitapp',
                 version: '0.0.1-SNAPSHOT',
                 repository: 'maven-snapshots',
-                credentialsId: 'nex',
+                credentialsId: 'nexuscredenciales',
                 artifacts: [
                     [artifactId: 'proyectoJunit',
                     classifier: '',
